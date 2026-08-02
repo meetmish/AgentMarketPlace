@@ -1,0 +1,90 @@
+.navbar {
+    margin: 1rem 2rem;
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius-md);
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-catchy {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.logo-catchy:hover {
+    transform: scale(1.02);
+}
+
+.logo-svg {
+    filter: drop-shadow(0 4px 6px rgba(99, 102, 241, 0.2));
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
+}
+
+.hub-text {
+    color: var(--text);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary);
+}
+
+.user-badge {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.role-pill {
+    font-size: 0.7rem;
+    background: #e0e7ff;
+    color: #4338ca;
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-logout {
+    background: none;
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}

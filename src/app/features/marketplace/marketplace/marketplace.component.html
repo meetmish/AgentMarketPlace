@@ -1,0 +1,27 @@
+<div class="container fade-in">
+    <header class="header">
+        <h1>Explore AI <span class="gradient-text">Agents</span></h1>
+        <p>Find and deploy ready-to-use autonomous agents for your workflow.</p>
+    </header>
+
+    <div class="agent-grid">
+        @for (agent of agentService.agents(); track agent.id) {
+        <div class="agent-card glass-card">
+            <div class="category">{{ agent.category }}</div>
+            <h3>{{ agent.name }}</h3>
+            <p>{{ agent.description }}</p>
+
+            <div class="features">
+                @for (feat of agent.features; track feat) {
+                <span class="feature-tag">✔ {{ feat }}</span>
+                }
+            </div>
+
+            <div class="card-footer">
+                <div class="price">\${{ agent.price }}</div>
+                <button class="btn btn-primary" (click)="buy(agent.name)">Buy Now</button>
+            </div>
+        </div>
+        }
+    </div>
+</div>

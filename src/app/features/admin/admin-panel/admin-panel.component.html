@@ -1,0 +1,50 @@
+<div class="container fade-in">
+    <header class="header">
+        <h1>Admin <span class="gradient-text">Console</span></h1>
+        <p>Global oversight of publishers, users, and AgentHub health.</p>
+    </header>
+
+    <div class="admin-grid">
+        <section class="approvals">
+            <div class="glass-card section-card">
+                <h3>Pending Approvals</h3>
+                <div class="list">
+                    @for (agent of pendingAgents(); track agent.id) {
+                    <div class="item">
+                        <div class="item-info">
+                            <strong>{{ agent.name }}</strong>
+                            <span>By Publisher: {{ agent.publisherId }}</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm"
+                            (click)="agentService.approveAgent(agent.id)">Approve</button>
+                    </div>
+                    } @empty {
+                    <p class="empty">No agents pending review.</p>
+                    }
+                </div>
+            </div>
+        </section>
+
+        <section class="permissions">
+            <div class="glass-card section-card">
+                <h3>Manage Subscriptions</h3>
+                <div class="list">
+                    <div class="item">
+                        <div class="item-info">
+                            <strong>Premium Publisher Tier</strong>
+                            <span>Allow 10+ Agents, 5% Commission</span>
+                        </div>
+                        <button class="btn-outline">Edit</button>
+                    </div>
+                    <div class="item">
+                        <div class="item-info">
+                            <strong>Enterprise Tier</strong>
+                            <span>Unlimited Agents, 2% Commission</span>
+                        </div>
+                        <button class="btn-outline">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

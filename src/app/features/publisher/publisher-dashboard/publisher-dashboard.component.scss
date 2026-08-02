@@ -1,0 +1,85 @@
+.dashboard-header {
+    margin-bottom: 3rem;
+}
+
+.stats-row {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    padding: 1.5rem 2.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+.stat-card .label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.stat-card .value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.publish-section {
+    margin-bottom: 4rem;
+}
+
+.publish-card {
+    padding: 2rem;
+}
+
+.mock-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    font-family: inherit;
+}
+
+.inventory-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.agent-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.status {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.status.approved {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.rev {
+    font-weight: 700;
+}

@@ -1,0 +1,56 @@
+❯ Building...
+✔ Building...
+Initial chunk files                                                              | Names                                                                         |  Raw size
+spec-app-features-publisher-publisher-dashboard-publisher-dashboard.component.js | spec-app-features-publisher-publisher-dashboard-publisher-dashboard.component |  11.30 kB | 
+spec-app-features-admin-admin-panel-admin-panel.component.js                     | spec-app-features-admin-admin-panel-admin-panel.component                     |  10.28 kB | 
+spec-app-features-marketplace-marketplace-marketplace.component.js               | spec-app-features-marketplace-marketplace-marketplace.component               |   8.88 kB | 
+chunk-DYUQUJK4.js                                                                | -                                                                             |   8.44 kB | 
+spec-app-features-auth-login-login.component.js                                  | spec-app-features-auth-login-login.component                                  |   7.78 kB | 
+spec-app-features-home-home-home.component.js                                    | spec-app-features-home-home-home.component                                    |   7.20 kB | 
+chunk-RSTWSNOR.js                                                                | -                                                                             |   4.75 kB | 
+spec-app-app.component.js                                                        | spec-app-app.component                                                        |   3.41 kB | 
+chunk-JOHMJOVS.js                                                                | -                                                                             |   2.35 kB | 
+chunk-YGNXRABS.js                                                                | -                                                                             |   2.05 kB | 
+styles.css                                                                       | styles                                                                        |   1.69 kB | 
+init-testbed.js                                                                  | init-testbed                                                                  |   1.21 kB | 
+spec-app-layout-navbar-navbar.component.js                                       | spec-app-layout-navbar-navbar.component                                       | 922 bytes | 
+
+                                                                                 | Initial total                                                                 |  70.26 kB
+
+Application bundle generation complete. [1.700 seconds] - 2026-02-25T19:13:57.100Z
+
+
+[1m[46m RUN [49m[22m [36mv4.0.18 [39m[90m/Users/vishwameetmishra/Downloads/__VISHWAMEET_MISHRA_CODES/MarketPlace/agent-marketplace[39m
+
+ [32m✓[39m [30m[42m agenthub [49m[39m src/app/features/marketplace/marketplace/marketplace.component.spec.ts [2m([22m[2m1 test[22m[2m)[22m[32m 101[2mms[22m[39m
+ [32m✓[39m [30m[42m agenthub [49m[39m src/app/features/admin/admin-panel/admin-panel.component.spec.ts [2m([22m[2m1 test[22m[2m)[22m[32m 148[2mms[22m[39m
+ [32m✓[39m [30m[42m agenthub [49m[39m src/app/features/publisher/publisher-dashboard/publisher-dashboard.component.spec.ts [2m([22m[2m1 test[22m[2m)[22m[32m 122[2mms[22m[39m
+ [31m❯[39m [30m[42m agenthub [49m[39m src/app/features/home/home/home.component.spec.ts [2m([22m[2m1 test[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 152[2mms[22m[39m
+[31m     [31m×[31m should create[39m[32m 152[2mms[22m[39m
+ [32m✓[39m [30m[42m agenthub [49m[39m src/app/features/auth/login/login.component.spec.ts [2m([22m[2m1 test[22m[2m)[22m[32m 100[2mms[22m[39m
+ [32m✓[39m [30m[42m agenthub [49m[39m src/app/layout/navbar/navbar.component.spec.ts [2m([22m[2m1 test[22m[2m)[22m[32m 80[2mms[22m[39m
+ [32m✓[39m [30m[42m agenthub [49m[39m src/app/app.component.spec.ts [2m([22m[2m1 test[22m[2m)[22m[32m 152[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m [30m[42m agenthub [49m[39m src/app/features/home/home/home.component.spec.ts[2m > [22mHomeComponent[2m > [22mshould create
+[31m[1mɵNotFound[22m: NG0201: No provider found for `ActivatedRoute`. Source: DynamicTestModule. Find more at https://v21.angular.dev/errors/NG0201[39m
+[90m [2m❯[22m createRuntimeError node_modules/@angular/core/fesm2022/_untracked-chunk.mjs:[2m600:17[22m[39m
+[90m [2m❯[22m NullInjector.get node_modules/@angular/core/fesm2022/_untracked-chunk.mjs:[2m881:21[22m[39m
+[90m [2m❯[22m R3Injector.get node_modules/@angular/core/fesm2022/_untracked-chunk.mjs:[2m1206:27[22m[39m
+[90m [2m❯[22m R3Injector.get node_modules/@angular/core/fesm2022/_untracked-chunk.mjs:[2m1206:27[22m[39m
+[90m [2m❯[22m ChainedInjector.get node_modules/@angular/core/fesm2022/_debug_node-chunk.mjs:[2m7507:32[22m[39m
+[90m [2m❯[22m lookupTokenUsingModuleInjector node_modules/@angular/core/fesm2022/_debug_node-chunk.mjs:[2m890:31[22m[39m
+[90m [2m❯[22m getOrCreateInjectable node_modules/@angular/core/fesm2022/_debug_node-chunk.mjs:[2m913:10[22m[39m
+[90m [2m❯[22m ɵɵdirectiveInject node_modules/@angular/core/fesm2022/_debug_node-chunk.mjs:[2m7541:17[22m[39m
+[90m [2m❯[22m NodeInjectorFactory.RouterLink_Factory [as factory] ng:/RouterLink/ɵfac.js:[2m6:7[22m[39m
+[90m [2m❯[22m getNodeInjectable node_modules/@angular/core/fesm2022/_debug_node-chunk.mjs:[2m1044:38[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m6 passed[39m[22m[90m (7)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m6 passed[39m[22m[90m (7)[39m
+[2m   Start at [22m 00:43:57
+[2m   Duration [22m 2.07s[2m (transform 414ms, setup 3.00s, import 738ms, tests 856ms, environment 7.70s)[22m
+
